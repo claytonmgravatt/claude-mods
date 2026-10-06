@@ -1,0 +1,16 @@
+{
+  "name": "claude-mods",
+  "owner": {
+    "name": "Clayton Gravatt"
+  },
+  "metadata": {
+    "description": "Claude Code mods by Clayton Gravatt."
+  },
+  "plugins": [
+    {
+      "name": "vivarium",
+      "source": "./plugins/vivarium",
+      "description": "Each subagent as a pixel Clawd in a strip above the prompt."
+    }
+  ]
+}

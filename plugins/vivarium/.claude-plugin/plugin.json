@@ -1,0 +1,7 @@
+{
+  "name": "vivarium",
+  "version": "0.1.0",
+  "description": "Shows each subagent as a pixel Clawd in a strip above the prompt: walking while it works, asleep when it finishes, sized by model. Click one for its details.",
+  "author": { "name": "Clayton Gravatt" },
+  "types": "./types/index.d.ts"
+}
