@@ -119,8 +119,10 @@ export const register: Register = on => {
 
     if (spawned.deny !== undefined || spawned.agentId === undefined) return spawned
 
+    // Keyed by the subagent's own id: every agent of a workflow run carries
+    // the Workflow call's tool_use_id, which would draw the run as one Clawd.
     const critter: Critter = {
-      id: e.tool_use_id,
+      id: spawned.agentId,
       agentId: spawned.agentId,
       kind: e.subagentType,
       description: e.description,

@@ -1,7 +1,10 @@
 export type Mood = 'awake' | 'asleep' | 'flopped'
 
 export type Critter = {
-  /** The Agent tool call that hatched it. */
+  /**
+   * The subagent's agentId. Not the Agent tool call's id, which every agent
+   * of a workflow run shares.
+   */
   id: string
   /** The subagent's loop id, once it started. */
   agentId?: string
